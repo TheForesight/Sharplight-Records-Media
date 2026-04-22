@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Sharplight</title>
+       <style>
+        * {
+            margin: 0;
+            padding: 1.0px;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, sans-serif;
+            background-color: rgb(240, 240, 240);
+            background-image: url('../images/srm1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            background-attachment: fixed;
+        }
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.2);
+            pointer-events: none;
+            z-index: -1;
+}
+        header{
+            background-color: rgb(74, 74, 184);
+            color: whitesmoke;
+            text-align: center;
+        }
+        nav a{
+            color: blanchedalmond;
+            cursor: pointer;
+            font-size: 20px;
+            text-align: center;
+            padding-inline: 10px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        h1{
+            text-transform: uppercase;
+        }
+        h2{
+            font-style: oblique;
+            color: rgb(255, 255, 255);
+            padding-top: 20px;
+            margin: 10px;
+        }
+        p{
+            color:rgb(237, 235, 233);
+            padding: 10px;
+            line-height: 1.6rem;
+
+        }
+        h4{
+            font-family: 'Courier New', Courier, monospace;
+            color: rgb(255, 255, 255);
+            padding: 10px;
+        }     
+        h6{
+            background-color: rgb(183, 192, 196);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: rgb(0, 0, 0);
+            padding: 10px;
+        }
+        .container{
+            padding: 10px;
+            margin:auto;
+            line-height: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            /*justify-content: space-around;*/
+        } 
+        .box{
+            width: 200px;
+            margin: 10px;
+            text-align: center;
+        }
+         .box img{
+            width: 100%;
+            height: auto;
+            border-radius: 80%;
+        }
+        footer{
+            background-color: rgb(224, 197, 197);
+            text-align: center;
+            color: blue;
+            padding-bottom: 0;
+        } 
+       </style>
+    </head>
+    <body>
+        <header>
+            <h1>Sharplight Records Media</h1>
+            <h4>The Quality You Need</h4>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+        <!--<img src="../images/srm3.jpg" alt="Sharplight Logo" style="width: 100px; height: 200;">-->
+
+        <h2>Welcome to Sharplight Records Media — Your Complete Production Partner</h2>
+        <p>
+            At Sharplight, we transform your vision into reality through professional audio, video, and photography production. We don't just record — we create experiences. Whether you're an artist, business, or individual, we combine cutting-edge technology with personalized service to deliver productions that exceed expectations. Your story deserves to be told beautifully, and we're here to make that happen.        
+        </p>
+        <p>
+            From the first note to the final frame, Sharplight Records Media delivers exceptional quality across all production needs. We specialize in high-quality music recording and audio mixing, cinematic video creation and editing, stunning professional photography, live streaming services, and innovative multimedia solutions. With state-of-the-art equipment and a dedicated team, we handle every aspect of production with precision and creativity.
+        </p>
+        <p>
+            Your project matters to us. At Sharplight Records Media, we are committed to bringing your vision to life with technical expertise and creative passion. Whether you need pristine audio tracks, captivating videos, breathtaking photographs, music and piano classes, news anchoring, or any other production service, we are your go-to studio. Let us help you create something unforgettable.
+        </p>
+            <section id="portfolio">
+                <h2>Our Team</h2>
+                <div class="container">
+                    <div class="box">
+                        <img src="../images/Peter.jpg" alt="Eng. Peter" style="width: 150px; height: 150px; border-radius: 50%;">
+                        <h4>Eng. Peter</h4>
+                        <h6>The Founder and CEO.</h6>
+                    </div>
+                    <div class="box">
+                        <img src="../images/Edy.jpg" alt="Eng. Edy" style="width: 150px; height: 150px; border-radius: 50%;">
+                        <h4>Eng. Edy</h4>
+                        <h6>The Co-Founder and CTO.</h6>
+
+                    </div>                    
+                </div> 
+              <!--  <a href="https://lh3.googleusercontent.com/a/ACg8ocJCDOjTWFLfiG--ujm3YAUeJXdPT-VP59VuwPzljFs7SQueZYbQ=s432-c-no" target="_blank">View Profile</a> -->
+            </section>
+    </body><br>
+    <footer>
+        &copy; 2026 Sharplight Records Media. All Rights Reserved.
+    </footer>
+</html>

@@ -1,103 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>About</title>
-       <style>
-        * {
-            margin: 0;
-            padding: 1.0px;
-            box-sizing: border-box;
-        }
-        body{
-            font-family: Arial, sans-serif;
-            background-color: rgb(240, 240, 240);
-            background-image: url('../images/srm1.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            
-        }        
-        header{
-            background-color: rgb(74, 74, 184);
-            color: whitesmoke;
-            text-align: center;
-        }
-        nav a{
-            color: blanchedalmond;
-            cursor: pointer;
-            font-size: 20px;
-            text-align: center;
-            padding-inline: 10px;
-            text-decoration: none;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        h1{
-            text-transform: uppercase;
-        }
-        h2{
-            font-style: oblique;
-        }
-        h4{
-            font-family: 'Courier New', Courier, monospace;
-        }
-        .container{
-            width: 90%;
-            margin: auto;
-            padding-top: 1.2rem;
-        }
-        .about{
-            background-color: aliceblue;
-            line-height:1.5rem ;
-            padding: 2.6rem;
-        }
-        .about p{
-            color:rgb(110, 98, 89);
-        }
-        footer{
-            background-color: rgb(224, 197, 197);
-            text-align: center;
-            color: blue;
-            padding-bottom: 0;
-        }         
-        </style>        
-    </head>
-    <body>
-        <header>
-            <h1>Sharplight Records Media</h1>
-            <h4>The Quality You Need</h4>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="services.html">Services</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </header>
-        <section class="container">
-            <section class="about">
-                <h2>Our Mission</h2>
-                <p>
-                    At Sharplight Records Media, we believe creativity knows no bounds. Our mission is to deliver comprehensive media production services—from stunning videos and immersive audio to expert music and instrument classes—that empower individuals and businesses to express their visions and thrive in the dynamic world of media and art.
-                </p><br>
-                <h2>Our Vision</h2>
-                <p>
-                    At Sharplight Records Media, we envision a future where media creativity is accessible to all. We aim to be the go-to hub for comprehensive media solutions and education, bridging technology with artistry to empower global communities, foster inclusive storytelling, and redefine how the world experiences media.
-                </p><br>
-                <h2>Our Values</h2>
-                <p>
-                    We're dedicated to sustainability, ethical practices, and nurturing local talent across all media forms. By supporting diverse creators with top-tier production and hands-on training, we create positive impacts in the industry, ensuring every project delivers exceptional experiences that inspire and engage audiences.  
-                </p><br>
-                <h2>Our Story</h2>
-                <p>
-                    Founded in 2016 as a passion-driven venture, Sharplight Records Media has blossomed into a versatile media powerhouse. From intimate music sessions to full-scale productions and skill-building classes, we've helped countless creators turn ideas into reality, always prioritizing quality, innovation, and community in everything we do.
-                </p>
-            </section>
-        </section>
-    </body><br>
-    <footer>
-        &copy; 2026 Sharplight Records Media. All Rights Reserved. //Harmony House Technologies. Eng. Edy +254-743-355-905
-    </footer>    
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About - Sharplight Records Media</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#111;
+color:#fff;
+}
+
+/* HEADER */
+header{
+background:#4a4ab8;
+text-align:center;
+padding:20px;
+}
+
+nav a{
+color:#ffe4c4;
+margin:0 10px;
+text-decoration:none;
+}
+
+nav a:hover{
+text-decoration:underline;
+}
+
+/* HERO */
+.hero{
+background:url('../images/srm1.jpg') center/cover no-repeat;
+padding:80px 20px;
+text-align:center;
+position:relative;
+}
+
+.hero::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.6);
+}
+
+.hero h1,
+.hero p{
+position:relative;
+z-index:1;
+}
+
+/* ABOUT CARDS */
+.section{
+padding:50px 20px;
+}
+
+.about-card{
+background:#1e1e1e;
+padding:25px;
+margin:20px auto;
+max-width:900px;
+border-radius:10px;
+transition:0.4s ease;
+opacity:0.9;
+}
+
+/* HOVER EFFECT */
+.about-card:hover{
+transform:translateY(-8px) scale(1.02);
+opacity:1;
+box-shadow:0 10px 25px rgba(0,0,0,0.5);
+}
+
+.about-card h2{
+margin-bottom:10px;
+transition:0.3s ease;
+}
+
+.about-card p{
+color:#ccc;
+line-height:1.6;
+transition:0.3s ease;
+}
+
+.about-card:hover h2{
+color:#4a4ab8;
+letter-spacing:1px;
+}
+
+.about-card:hover p{
+color:#fff;
+}
+
+/* 📲 WHATSAPP FLOATING BUTTON (WITH TEXT) */
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+display:flex;
+align-items:center;
+gap:10px;
+padding:12px 18px;
+border-radius:50px;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+text-decoration:none;
+z-index:999;
+font-weight:bold;
+transition:0.3s;
+}
+
+.whatsapp-float:hover{
+transform:scale(1.05);
+background:#1ebe5d;
+}
+
+/* ICON */
+.whatsapp-float span.icon{
+font-size:22px;
+}
+
+/* TEXT */
+.whatsapp-float span.text{
+font-size:14px;
+white-space:nowrap;
+}
+
+/* FOOTER */
+footer{
+background:#ddd;
+color:#000;
+text-align:center;
+padding:10px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Sharplight Records Media</h1>
+<h4>The Quality You Need</h4>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+<h1>About Sharplight</h1>
+<p>Where Creativity Meets Professional Production</p>
+</section>
+
+<!-- ABOUT CONTENT -->
+<section class="section">
+
+<div class="about-card">
+<h2>Our Mission</h2>
+<p>We deliver world-class media production services that empower creativity through audio, video, and photography.</p>
+</div>
+
+<div class="about-card">
+<h2>Our Vision</h2>
+<p>To become a leading creative hub bridging technology and artistry in global storytelling.</p>
+</div>
+
+<div class="about-card">
+<h2>Our Values</h2>
+<p>We value creativity, professionalism, innovation, and support for local talent in media production.</p>
+</div>
+
+<div class="about-card">
+<h2>Our Story</h2>
+<p>Founded in 2016, Sharplight Records Media has grown into a full production studio serving artists and businesses.</p>
+</div>
+
+</section>
+
+
+<!-- 📲 FLOATING WHATSAPP BUTTON -->
+<a href="https://wa.me/254728590084" class="whatsapp-float" target="_blank">
+<span class="icon">💬</span>
+<span class="text">WhatsApp Us</span>
+</a>
+
+<footer>
+&copy; 2026 Sharplight Records Media. All Rights Reserved.
+</footer>
+
+</body>
 </html>
